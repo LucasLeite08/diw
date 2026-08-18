@@ -1,13 +1,134 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <title>Hello World</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Currículo — Lucas Leite de Andrade</title>
+  <meta name="description" content="Currículo em HTML/CSS de Lucas Leite de Andrade" />
+
+  <!-- Fonte (substitua se preferir) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1>Hello World, I'm Lucas.</h1>
-    <img src="print.png">
+  <article class="cv-wrap" role="article" aria-label="Currículo">
 
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Informações pessoais">
+      <div class="photo" aria-hidden="true">
+        <img src="image.png" alt="Foto de Lucas Leite" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"/>
+      </div>
+      <div class="profile">
+        <div class="name">Lucas Leite de Andrade</div>
+        <div class="role">Cientista da Computação</div>
+      </div>
 
+      <div class="contact">
+        <h3>Contato</h3>
+        <p><strong>Email:</strong> <br><a href="mailto:lucasleitedeandrade2008@gmail.com">lucasleitedeandrade2008@email.com</a></p>
+        <p><strong>Telefone:</strong> <br><a href="tel:+5531996364463">+55 (31) 99636-4463</a></p>
+        <p><strong>Localização:</strong> <br>Belo Horizonte, Brasil</p>
+
+        <div style="margin-top:10px">
+          <a class="muted" href="https://www.linkedin.com/in/lucas-de-andrade-06241b280/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Competências</h3>
+        <div class="skill-list">
+          <span class="skill">C</span>
+          <span class="skill">C++</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Python</span>
+          <span class="skill">HTML</span>
+          <span class="skill">Git/GitHub</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Idiomas</h3>
+        <p class="muted">Português — Nativo</p>
+        <p class="muted">Inglês — Avançado</p>
+      </div>
+
+      <div class="section">
+        <h3>Interesses</h3>
+        <span class="tag">Otimização</span>
+        <span class="tag">Banco de Dados</span>
+        <span class="tag">Tecnologia</span>
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="headline">
+        <div>
+          <h2 style="margin:0">Lucas Leite de Andrade</h2>
+          <div class="muted">Cientista da computação em formação focado em resolução de problemas e otimização de processos</div>
+        </div>
+        <div style="text-align:right">
+          <div class="muted">Disponível para trabalho remoto ou presencial</div>
+        </div>
+      </header>
+
+      <section class="summary item">
+        <h3>Resumo profissional</h3>
+        <p class="desc">Estudante destaque durante toda jornada acadêmica com diversas experiências extracurriculares.</p>
+      </section>
+
+      <section class="experience item">
+        <h3>Experiência</h3>
+
+        <div class="exp-row">
+          <div class="meta">
+            <div>
+              <h4>Freelancer — Software Developer</h4>
+              <div class="muted">2026 - Atual</div>
+            </div>
+            <div class="muted">Remoto</div>
+          </div>
+          <p class="desc">Análise de situações problemas e criação de programas e estratégias para otimização de processos.</p>
+        </div>
+      </section>
+
+      <section class="item">
+        <h3>Educação</h3>
+        <div style="margin-top:8px">
+          <h4>PUC Minas — Ciência da Computação</h4>
+          <div class="muted">2026 </div>
+          <p class="desc">Destaque acadêmico e experiências extracurriculares como monitorias e atividades extensionistas.</p>
+        </div>
+      </section>
+
+      <section class="item">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:12px; margin-top:10px">
+          <div style="padding:10px; border-radius:8px; border:1px solid rgba(15,23,42,0.04)">
+            <strong>Portfólio Pessoal</strong>
+            <p class="muted"><a href="https://github.com/LucasLeite08">https://github.com/LucasLeite08</a></p>
+          </div>
+          <div style="padding:10px; border-radius:8px; border:1px solid rgba(15,23,42,0.04)">
+          </div>
+        </div>
+      </section>
+
+      <footer style="margin-top:22px; border-top:1px dashed rgba(15,23,42,0.04); padding-top:12px">
+        <div class="muted">Disponível para entrevistas — referências mediante solicitação.</div>
+      </footer>
+
+    </main>
+  </article>
 </body>
 </html>
